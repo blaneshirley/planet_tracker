@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Calendar</title>
+   <link rel="icon" type="image/png" href="https://th.bing.com/th/id/OIP.RhPnjqvYybrq-QAP2_XcpwHaFj?w=248&h=185&c=7&r=0&o=5&dpr=1.3&pid=1.7">
+</head>
+
+<body>
+<header>
+   <a href="index.html">
+      <img src="https://th.bing.com/th/id/OIP.RhPnjqvYybrq-QAP2_XcpwHaFj?w=248&h=185&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Planet Tracker Logo" width="100" height="100">
+   </a>
+   <nav>
+      <a href="index.html">Home</a>
+      <a href="calendar.html">Calendar</a>
+      <a href="planets.html">Planets</a>
+      <a href="celestial.html">Celestial Events</a>
+   </nav>
+</header>
+
+<section>
+   <h1>Calendar</h1>
+   <br>
+   <img src="https://blankcalendarpages.com/printable_calendar/yearly/2025-year-calendar-yr6.jpg" alt="Calendar picture" width="1000" height="700">
+</section>
+
+<section>
+   <h2>Select a Month Below!</h2>
+   <div>
+      <label for="monthdata"></label>
+      <select name="monthdata" id="monthdata">
+         <option value="January">January</option>
+         <option value="February">February</option>
+         <option value="March">March</option>
+         <option value="April">April</option>
+         <option value="May">May</option>
+         <option value="June">June</option>
+         <option value="July">July</option>
+         <option value="August">August</option>
+         <option value="September">September</option>
+         <option value="October">October</option>
+         <option value="November">November</option>
+         <option value="December">December</option>
+      </select>
+   </div>
+   <h3>The following planets are best viewed during the selected month:</h3>
+   <div id="result">
+      <!-- Displayed planet(s)-->
+   </div>
+   <script>
+      document.getElementById('monthdata').addEventListener('change', function() {
+        var month = this.value;
+        var resultDiv = document.getElementById('result');
+        
+        resultDiv.innerHTML = '';
+
+        switch (month) {
+          case 'January':
+          case 'February':
+            resultDiv.innerHTML = '<h1>Venus, Mars, Jupiter</h1>';
+            break;
+          case 'March':
+          case 'April':
+          case 'June':
+          case 'May':
+            resultDiv.innerHTML = '<h1>Venus, Mars</h1>';
+            break;
+          case 'July':
+            resultDiv.innerHTML = '<h1>Mercury, Venus, Saturn, Neptune</h1>';
+            break;
+          case 'August':
+          case 'September':
+            resultDiv.innerHTML = '<h1>Saturn, Neptune</h1>';
+            break;
+          case 'October':
+            resultDiv.innerHTML = '<h1>Saturn, Uranus</h1>';
+            break;
+          case 'November':
+            resultDiv.innerHTML = '<h1>Jupiter, Saturn, Uranus</h1>';
+            break;
+          case 'December':
+            resultDiv.innerHTML = '<h1>Jupiter, Uranus</h1>';
+            break;
+          default:
+            resultDiv.innerHTML = '<h1>Invalid month</h1>';
+        }
+      });
+    </script>
+   <div>
+      <h3>For more information, visit the planets page!</h3>
+   </div>
+</section>
+
+<footer>
+   <h4>Website created by Blane Shirley 2024</h4>
+</footer>
+
+</body>
+</html>
