@@ -4,6 +4,8 @@
    <meta charset="UTF-8">
    <title>Calendar</title>
    <link rel="icon" type="image/png" href="https://th.bing.com/th/id/OIP.RhPnjqvYybrq-QAP2_XcpwHaFj?w=248&h=185&c=7&r=0&o=5&dpr=1.3&pid=1.7">
+   <!--CSS-->
+   <link rel="stylesheet" href="stylesheet.css">
 </head>
 
 <!-- Google tag (gtag.js) -->
@@ -15,46 +17,51 @@
 
   gtag('config', 'G-XXR1F22CBD');
 </script>
-   
+
 <body>
-<header>
-   <a href="index.html">
-      <img src="https://th.bing.com/th/id/OIP.RhPnjqvYybrq-QAP2_XcpwHaFj?w=248&h=185&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Planet Tracker Logo" width="100" height="100">
-   </a>
-   <nav>
-      <a href="index.html">Home</a>
-      <a href="calendar.html">Calendar</a>
-      <a href="planets.html">Planets</a>
-      <a href="celestial.html">Celestial Events</a>
+<header id="calendarheader">
+   <section id="logo">
+      <a href="index.html">
+         <img src="https://th.bing.com/th/id/OIP.RhPnjqvYybrq-QAP2_XcpwHaFj?w=248&h=185&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Planet Tracker Logo" width="100" height="100">
+      </a>
+   </section>
+   <nav id="calendarnav">
+      <a href="index.html"> Home | </a>
+      <a href="calendar.html">Calendar | </a>
+      <a href="planets.html">Planets | </a>
+      <a href="celestial.html">Celestial Events </a>
    </nav>
 </header>
 
-<section>
-   <h1>Calendar</h1>
-   <br>
-   <img src="https://blankcalendarpages.com/printable_calendar/yearly/2025-year-calendar-yr6.jpg" alt="Calendar picture" width="1000" height="700">
-</section>
-
-<section>
-   <h2>Select a Month Below!</h2>
-   <div>
-      <label for="monthdata"></label>
-      <select name="monthdata" id="monthdata">
-         <option value="January">January</option>
-         <option value="February">February</option>
-         <option value="March">March</option>
-         <option value="April">April</option>
-         <option value="May">May</option>
-         <option value="June">June</option>
-         <option value="July">July</option>
-         <option value="August">August</option>
-         <option value="September">September</option>
-         <option value="October">October</option>
-         <option value="November">November</option>
-         <option value="December">December</option>
-      </select>
+<section id="calendar">
+   <div id="calendarimg">
+      <h1>Calendar</h1>
+      <br>
+      <img src="https://blankcalendarpages.com/printable_calendar/yearly/2025-year-calendar-yr6.jpg" alt="Calendar picture" width="1300" height="1000">
    </div>
-   <h3>The following planets are best viewed during the selected month:</h3>
+
+   <div>
+      <h2>Select a Month Below!</h2>
+      <div>
+         <label for="monthdata"></label>
+         <select name="monthdata" id="monthdata">
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+         </select>
+      </div>
+      <h3>The following planets are best viewed during the selected month:</h3>
+   </div>
+</section id=calendarplanets>
    <div id="result">
       <!-- Displayed planet(s)-->
    </div>
@@ -97,9 +104,9 @@
         }
       });
     </script>
-   <div>
-      <h3>For more information, visit the planets page!</h3>
-   </div>
+</section>
+<section id="calendartext">
+   <h3>For more information, visit the planets page!</h3>
 </section>
 
 <footer>
