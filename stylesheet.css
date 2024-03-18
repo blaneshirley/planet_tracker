@@ -1,0 +1,106 @@
+* {box-sizing: border-box}
+
+/*background image for whole website*/
+html {
+    background-image: url('https://wallpapertag.com/wallpaper/full/8/2/c/413431-space-star-background-1920x1080-iphone.jpg');
+    background-size: cover;
+    /*this covers the whole page with the image*/
+    background-position: center;
+}
+
+#logo {
+    position: absolute;
+    top:0;
+    left: 0;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+/*Body format*/
+body {
+    font-size: 25px;
+    color: white;
+    /*font color is white to make it stand out from dark background image*/
+    line-height: 1.5;
+    /*line spacing*/
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 50px;
+}
+
+/* Changes fonts and sizing of titles */
+h1 {
+    font-size: 70px;
+    /*font is large because this is the title*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin-left:200px;
+    margin-right: 200px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    /*Long titles look better when they do not cross the whole page*/
+}
+
+/* Changes fonts and sizing of subtitles */
+h2 {
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+/*navigation bar formatting*/
+nav {text-align: center;}
+nav a {
+    color: white;
+    font-weight: bold;
+    /*makes the nav links look more noticeable*/
+    font-size: 30px;
+    text-decoration: none;
+    /*this removes the underlined nav links*/
+    
+}
+
+/* Home page website summary */
+#summary {
+    text-align: center;
+    /*centers text for a specific section on the home page*/
+}
+
+/* Home page CTA calendar navigation button */
+#button {
+    width: 1000px;
+    height: 250px;
+    /*adds space between the content and the border*/
+    margin: auto;
+    background-image: linear-gradient(to bottom, rgb(20, 10, 60), rgba(20,10,60,0));
+    /*this transparently fades the section that contains the button into the background image*/
+    /*learned from W3 schools*/
+    
+}
+
+/*centering calendar image, learned in W3 schools*/
+#calendarimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    /*centers the calendar image*/
+}
+
+#calendarheader {
+    background-color: rgb(20, 10, 60);
+    margin-left: 0;
+    margin-right: 0;
+    /*formats the calendar section background color to dark blue*/
+}
+#calendar, #calendarnav {
+    background-color: rgb(20, 10, 60);
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    /*centers text on the calendar page and continues the dark blue theme to these sections*/
+}
+
+#calendarplanets, #calendartext {
+    text-align: center;
+    /*centers additional text that was not being captured by the complete section id*/
+}
