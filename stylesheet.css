@@ -91,8 +91,8 @@ select:focus#monthdata {
 /* Home page website summary */
 #summary {
     text-align: center;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
     /*centers text for a specific section on the home page and increases margins*/
 }
 
@@ -136,13 +136,6 @@ select:focus#monthdata {
     /*centers additional text that was not being captured by the complete section id*/
 }
 
-/*adjusting the image for the meteor showers*/
-.meteor {
-    position: relative;
-    left: -300px;
-    
-}
-
 /*image borders glow blue when hovering over them since it was hard to see without them*/
 #gov a img {
     height: auto;
@@ -165,3 +158,4 @@ select:focus#monthdata {
     flex-direction: column;
     align-items: center;
 }
+
