@@ -8,17 +8,19 @@ html {
     background-position: center;
 }
 
+/*Logo positioning*/
 #logo {
     position: absolute;
     top:0;
     left: 0;
     margin-top: 50px;
     margin-left: 50px;
+    /*this makes the logo line up with the margins of the pages*/
 }
 
 /*Body format*/
 body {
-    font-size: 25px;
+    font-size: 20px;
     color: white;
     /*font color is white to make it stand out from dark background image*/
     line-height: 1.5;
@@ -29,7 +31,7 @@ body {
 
 /* Changes fonts and sizing of titles */
 h1 {
-    font-size: 70px;
+    font-size: 50px;
     /*font is large because this is the title*/
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
@@ -42,7 +44,7 @@ h1 {
 
 /* Changes fonts and sizing of subtitles */
 h2 {
-    font-size: 50px;
+    font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
 }
@@ -56,13 +58,42 @@ nav a {
     font-size: 30px;
     text-decoration: none;
     /*this removes the underlined nav links*/
-    
+}
+
+/*button formatting*/
+button {
+    font-size: 35px; /* Adjusts the size of the text inside the button */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px 20px; /* Adds space around the text inside the button */
+    height: 50px; /* Sets a specific height for the button */
+    width: 400px; /* Sets a specific width for the button */
+    position: relative;
+    top: 75px;
+  }
+
+/*dropdown formatting*/
+div.dropdown {
+    width:10px;
+}
+
+/*I figured this out from help on a css help website*/
+select#monthdata {
+    width:20%;
+    height: 50px;
+    font-size: 35px;
+    text-align: center;
+}
+
+select:focus#monthdata {
+    width:auto\9;
 }
 
 /* Home page website summary */
 #summary {
     text-align: center;
-    /*centers text for a specific section on the home page*/
+    margin-left: 50px;
+    margin-right: 50px;
+    /*centers text for a specific section on the home page and increases margins*/
 }
 
 /* Home page CTA calendar navigation button */
@@ -78,7 +109,7 @@ nav a {
 }
 
 /*centering calendar image, learned in W3 schools*/
-#calendarimg {
+.calendarimg {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -103,4 +134,34 @@ nav a {
 #calendarplanets, #calendartext {
     text-align: center;
     /*centers additional text that was not being captured by the complete section id*/
+}
+
+/*adjusting the image for the meteor showers*/
+.meteor {
+    position: relative;
+    left: -300px;
+    
+}
+
+/*image borders glow blue when hovering over them since it was hard to see without them*/
+#gov a img {
+    height: auto;
+    border: 2px solid transparent; 
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#gov a:hover img {
+    border-color: rgb(20, 10, 60);
+    box-shadow: 0 0 10px rgb(20, 10, 60);
+}
+
+/*formats the form on the celestial page*/
+#form {
+    background-color:rgb(20, 10, 60);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
